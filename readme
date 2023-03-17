@@ -1,0 +1,2 @@
+To Run the app use 
+npx playwright test

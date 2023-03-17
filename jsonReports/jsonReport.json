@@ -1,0 +1,175 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/nirmalkumar.2/GL/Discovery/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "",
+        "testDir": "/home/nirmalkumar.2/GL/Discovery/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/first.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "configFile": "/home/nirmalkumar.2/GL/Discovery/playwright/playwright.config.ts",
+    "rootDir": "/home/nirmalkumar.2/GL/Discovery/playwright",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.31.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests/first.test.ts",
+      "file": "tests/first.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "basic test case",
+          "file": "tests/first.test.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should first",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3852,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-03-17T12:11:13.770Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/nirmalkumar.2/GL/Discovery/playwright/test-results/tests-first-basic-test-case-should-first/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "126d4b571f4e29a9c819-6cd10b3d582d68a07be9",
+              "file": "tests/first.test.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "-ve test title",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 8171,
+                      "error": {
+                        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Online Shopping site in India: Shop Online for Mobiles,\"\u001b[39m\nReceived string: \u001b[31m\"Online Shopping site in India: Shop Online for Mobiles,\u001b[7m Books, Watches, Shoes and More - Amazon.in\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Online Shopping site in India: Shop Online for Mobiles,\"\u001b[39m\nReceived string: \u001b[31m\"Online Shopping site in India: Shop Online for Mobiles,\u001b[7m Books, Watches, Shoes and More - Amazon.in\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\n    at /home/nirmalkumar.2/GL/Discovery/playwright/tests/first.test.ts:29:24"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/nirmalkumar.2/GL/Discovery/playwright/tests/first.test.ts",
+                            "column": 24,
+                            "line": 29
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Online Shopping site in India: Shop Online for Mobiles,\"\u001b[39m\nReceived string: \u001b[31m\"Online Shopping site in India: Shop Online for Mobiles,\u001b[7m Books, Watches, Shoes and More - Amazon.in\u001b[27m\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en-in\" data-19ax5a9jf=\"dingo\" data-platfor…>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39mtests/first.test.ts:29\n\n\u001b[0m \u001b[90m 27 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.amazon.in/\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"Online Shopping site in India: Shop Online for Mobiles,\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m     \u001b[90m// await page.waitForTimeout(5000);\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /home/nirmalkumar.2/GL/Discovery/playwright/tests/first.test.ts:29:24\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-03-17T12:11:17.623Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/nirmalkumar.2/GL/Discovery/playwright/test-results/tests-first-basic-test-case--ve-test-title/test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/nirmalkumar.2/GL/Discovery/playwright/test-results/tests-first-basic-test-case--ve-test-title/test-failed-2.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/nirmalkumar.2/GL/Discovery/playwright/tests/first.test.ts",
+                        "column": 24,
+                        "line": 29
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "126d4b571f4e29a9c819-01eefc4a622a16231a5d",
+              "file": "tests/first.test.ts",
+              "line": 21,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
