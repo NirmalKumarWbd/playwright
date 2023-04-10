@@ -28,7 +28,7 @@ test.describe("basic test case", async () => {
     await page.goto("https://www.amazon.in/")
     await expect(page).toHaveTitle("Online Shopping site in India: Shop Online for Mobiles,")
     
-    // await page.waitForTimeout(5000);
+    await page.waitForTimeout(5000);
   });
   
 });
